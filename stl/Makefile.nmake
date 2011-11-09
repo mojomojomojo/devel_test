@@ -1,0 +1,15 @@
+# Make sure vcvarsall.bat has been run in your environment.
+#   %comspec% /k ""c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\vcvarsall.bat"" amd64
+# Invoke nmake using this file with:
+#   nmake -f Makefile.nmake [<args>]
+
+CXX=cl.exe
+CPPFLAGS=
+CXXFLAGS=
+LDLIBS=
+
+#%.exe:%.cpp
+#	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $^ $(LDLIBS) -o $@
+
+
+stl_vector.exe:
