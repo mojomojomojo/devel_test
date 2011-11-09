@@ -27,6 +27,7 @@ int main() {
          << endl
          << "# ";
     cin >> read_int;
+    if (cin.eof()) break;
     if (cin.fail()) {
       cerr << "Bad data! Aborting..." << endl;
       exit(1);

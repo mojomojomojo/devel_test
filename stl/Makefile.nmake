@@ -15,6 +15,10 @@ BINARIES=stl_vector.exe stl_vector.o*
 #	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $^ $(LDLIBS) -o $@
 
 
+test: stl_vector.exe
+	stl_vector.exe < integers.txt
+
+
 stl_vector.exe:
 
 clean:
