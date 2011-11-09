@@ -7,5 +7,10 @@ LDLIBS=
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $^ $(LDLIBS) -o $@
 
 
-stl_vector.exe:CPPFLAGS+=-g
-stl_vector.exe:
+#program.exe:CPPFLAGS+=-g
+#program.exe:LDLIBS+=-lpthread
+#program.exe:
+
+
+#test_program: program.exe
+#	program.exe -testarg1 a
