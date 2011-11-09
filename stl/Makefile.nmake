@@ -8,8 +8,14 @@ CPPFLAGS=
 CXXFLAGS=
 LDLIBS=
 
+BINARIES=stl_vector.exe stl_vector.o*
+
+
 #%.exe:%.cpp
 #	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $^ $(LDLIBS) -o $@
 
 
 stl_vector.exe:
+
+clean:
+	del /q $(BINARIES)

@@ -27,7 +27,11 @@ int main() {
          << endl
          << "# ";
     cin >> read_int;
-    cin.seekg(ios_base::end); // skip any bad (non-integer) data.
+    if (cin.fail()) {
+      cerr << "Bad data! Aborting..." << endl;
+      exit(1);
+    }
+
     cout << "Read '" << read_int << "'" << endl;
 
     if (read_int != 0) numbers.push_back(read_int);
@@ -35,6 +39,7 @@ int main() {
 
   cout << numbers.size() << " positive numbers read." << endl;
   dumpList(numbers);
+  cout << endl << endl;
 
 
   ////////////////////////////////////////////////////////////////////////
@@ -56,6 +61,7 @@ int main() {
   }
   cout << "Sorted numbers (method 1):" << endl;
   dumpList(method1_list);
+  cout << endl;
 
 
   // Method 2 (iterators)
@@ -77,6 +83,7 @@ int main() {
   }
   cout << "Sorted numbers (method 2):" << endl;
   dumpList(method2_list);
+  cout << endl;
 
 
   // Method 2 (STL algorithm)
@@ -84,5 +91,6 @@ int main() {
   sort(method3_list.begin(),method3_list.end());
   cout << "Sorted numbers (method 3):" << endl;
   dumpList(method3_list);
+  cout << endl;
 
 }
