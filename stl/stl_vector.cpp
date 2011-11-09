@@ -32,8 +32,10 @@ int main() {
       cerr << "Bad data! Aborting..." << endl;
       exit(1);
     }
+    cout << endl << endl;
 
     cout << "Read '" << read_int << "'" << endl;
+    cout << endl << endl;
 
     if (read_int != 0) numbers.push_back(read_int);
   }
