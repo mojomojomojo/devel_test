@@ -1,0 +1,4 @@
+This repository contains tests/verifications of your development environment.
+
+Currently, I'm targeting GNU Make for Windows (3.82) and TDM-GCC x64,
+but including Visual Studio would be a plus.
